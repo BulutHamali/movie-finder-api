@@ -1,4 +1,3 @@
-// routes/movieRoutes.js
 import express from 'express';
 import { searchMovies, getMovieDetails } from '../controllers/movieController.js';
 
