@@ -1,4 +1,4 @@
-// api/moviesClient.js
+
 import axios from 'axios';
 import dotenv from 'dotenv';
 
