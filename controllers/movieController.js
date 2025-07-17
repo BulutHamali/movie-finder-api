@@ -1,4 +1,4 @@
-import { moviesClient } from "../api/moviesClient.js"; // ✅ nice separation of concerns
+import { moviesClient } from "../api/moviesClient.js"; 
 
 export const searchMovies = async (req, res) => {
   try {
@@ -11,7 +11,7 @@ export const searchMovies = async (req, res) => {
         .json({ error: "Title query parameter is required" });
     }
 
-    const moviesResult = await moviesClient.get(`/?s=${title}`); // ✅ simplified call with base URL preset
+    const moviesResult = await moviesClient.get(`/?s=${title}`); 
 
     res.json(moviesResult.data);
   } catch (error) {
